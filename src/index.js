@@ -58,7 +58,7 @@ async function setupViewer(){
     // This must be called once after all plugins are added.
     viewer.renderer.refreshPipeline()
 
-    const model = await manager.addFromPath("./assets/scene (2).glb")
+    const model = await manager.addFromPath("./assets/scene.glb")
     const Object3d = model[0].modelObject;
     const modelPosition = Object3d.position;
     const modelRotation = Object3d.rotation;
